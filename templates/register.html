@@ -17,8 +17,30 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="messages">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+
+        
+        
         <h1> Registration Page for DCF </h1>
+        <form method = "POST" action = "" >
+            {{form.hidden_tag()}}
+            {{form.username}}
+            {{form.password}}
+            {{form.submit}}
+        </form>
+
+
         <a href = "{{url_for('login')}}">Have an account already? </a> <br>
-        <script src="" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     </body>
 </html>
