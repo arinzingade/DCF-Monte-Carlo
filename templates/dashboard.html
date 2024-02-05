@@ -8,7 +8,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Login</title>
+        <title>DashBoard</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
@@ -17,16 +17,8 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h1> This is the LogIn Page </h1>
-        <form method = "POST" action = "">
-            {{form.hidden_tag()}}
-            {{form.username}}
-            {{form.password}}
-            {{form.submit}}
-        </form>
-        <a href = "{{url_for('signup')}}">Don't have an account? SignUp Here</a><br>
-
-
+        <h1> Hello You are Logged in, this is the dashboard </h1>
+        <a href = "{{url_for("login")}}" > LogOut </a><br>
         <script src="" async defer></script>
     </body>
 </html>
