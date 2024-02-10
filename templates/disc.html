@@ -14,7 +14,16 @@
     </head>
     <body>
         <h1> Hello There! </h1>
-        
+        <form method = "POST" action = "">
+            {{form.hidden_tag()}}
+            {{form.stock1}}
+            {{form.stock2}}
+            {{form.submit_corr}}
+        </form>
+
+        {%if correlation_result is not none%}
+            <p> Correlation Result is: {{correlation_result}} </p>
+        {%endif%}
         <script src="" async defer></script>
     </body>
 </html>

@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template, url_for, redirect
+from flask import Flask, render_template, url_for, redirect, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 from os import path
@@ -8,7 +8,8 @@ from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Length, ValidationError
 from flask_bcrypt import Bcrypt
 from flask import flash
-
+import yfinance as yf
+import numpy as np
 
 app = Flask(__name__)
 
@@ -43,8 +44,19 @@ class LoginForm(FlaskForm):
     
     submit = SubmitField("Login")
 
+class WaccForm(FlaskForm):
+    stock = StringField(validators=[InputRequired(), Length(min = 1, max = 20)], render_kw = {"placeholder" : "Stock Ticker"})
+    index = StringField(validators=[InputRequired(), Length(min = 1, max = 20)], render_kw = {"placeholder": "Principal Index"})
+
+class CorrForm(FlaskForm):
+    stock1 = StringField(validators=[InputRequired(), Length(min = 1, max = 20)], render_kw = {"placeholder" : "Stock Ticker 1"})
+    stock2 = StringField(validators=[InputRequired(), Length(min = 1, max = 20)], render_kw = {"placeholder" : "Stock Ticker 2"})
+    
+    submit_corr = SubmitField("Calculate the Correlation")
+
 @app.route('/')
 def home():
+    
     return render_template("home.html")
 
 @login_manager.user_loader
@@ -62,24 +74,6 @@ def login():
                 return redirect (url_for("dashboard"))
     
     return render_template("login.html", form = form_login)
-
-
-@app.route('/DiscountedCash', methods = ['POST', 'GET'])
-@login_required
-def discounted():
-    return render_template('disc.html')
-
-@app.route('/dashboard', methods = ['POST', 'GET'])
-@login_required
-def dashboard():
-    return render_template('dashboard.html')    
-
-@app.route('/logout', methods = ['POST', 'GET'])
-@login_required
-def logout():
-    logout_user()
-    return redirect(url_for("login"))
-
 
 @app.route('/signup', methods = ['GET', 'POST'])
 def signup():
@@ -100,6 +94,47 @@ def signup():
             return redirect(url_for("login"))
     
     return render_template("register.html", form = form_signup)
+
+@app.route('/dashboard', methods = ['POST', 'GET'])
+@login_required
+def dashboard():
+    return render_template('dashboard.html')    
+
+@app.route('/logout', methods = ['POST', 'GET'])
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for("login"))
+
+@app.route('/DiscountedCash', methods = ['POST', 'GET'])
+@login_required
+def discounted():
+    formCorr = CorrForm()
+    
+    def correlation(x, y):
+    
+        mean_x = np.mean(x)
+        mean_y = np.mean(y)
+        p = x - mean_x
+        q = y - mean_y
+
+        return np.sum(p*q)/np.sqrt(np.sum(p**2)*np.sum(q**2))
+    
+    if request.method == 'POST' and formCorr.validate_on_submit():
+        stock1_ticker = request.form['stock1'].upper()
+        stock2_ticker = request.form['stock2'].upper()
+        
+        stock1_data = yf.download(stock1_ticker, start = "2020-01-01", end = "2023-01-01")['Adj Close']
+        stock2_data = yf.download(stock2_ticker, start = "2020-01-01", end = "2023-01-01")['Adj Close']
+        
+        stock1_data = np.array(stock1_data)
+        stock2_data = np.array(stock2_data)
+        
+        corr = correlation(stock1_data, stock2_data)
+        
+        return render_template("disc.html", form = formCorr, correlation_result = corr)
+    
+    return render_template('disc.html', form = formCorr, correlation_result = None)
 
 
 if __name__ == '__main__':
