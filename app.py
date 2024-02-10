@@ -64,6 +64,11 @@ def login():
     return render_template("login.html", form = form_login)
 
 
+@app.route('/DiscountedCash', methods = ['POST', 'GET'])
+@login_required
+def discounted():
+    return render_template('disc.html')
+
 @app.route('/dashboard', methods = ['POST', 'GET'])
 @login_required
 def dashboard():
