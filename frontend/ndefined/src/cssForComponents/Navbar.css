@@ -1,0 +1,31 @@
+body{
+    font-size: 2em;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+
+}
+.list-container{
+    width:50%;
+}
+.navbar-list{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #72777C;
+}
+a:hover{
+    color:white;
+    transition: .3s;
+}
