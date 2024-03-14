@@ -1,0 +1,58 @@
+
+.noto-serif toto-titleFinal {
+    font-family: "Noto Serif Toto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+.noto-serif-title {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.container-main{
+    padding-top: 2em;
+    padding-bottom: 10em; 
+    margin: 0;
+    /* background-image: url('../assets/collage-finance-banner-concept-01.jpeg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+    display: flex;
+    align-items: center;
+   justify-content: center;
+
+}
+.Main-heading-container{
+    margin-top: 2em;
+    display: flex;
+    z-index: 2;
+}
+.title-main{
+    font-size: 3rem;
+    font-family: "Noto Serif Toto", serif;
+}
+.image-container{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    width: 40%;
+}
+.image-container-2{
+  
+   width: 50%;
+}
+.main-image{
+    max-width: 100%;
+    display: flex;
+    z-index: -1;
+}
+/* .heading-colored{
+    color: #8088d6;
+} */
+
+
+
