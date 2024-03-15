@@ -7,28 +7,28 @@ export default function Main(){
         <motion.div className="Main-heading-container" 
         
             initial={{
-                translateY:1,
-               scale:0,  
+                // translateY:1,
+            //    scale:0,  
                opacity:0
             }}
             animate={{
-                translateY:0,
-               scale:1,   
+                // translateY:0,
+            //    scale:1,   
                opacity:1  
             }}
             transition={{
-                delay:1,
+                
                 duration:1,
-                ease:'linear'
+                ease:'easeIn'
             }}
            
             >
                 <motion.div 
                 animate={{scale:[1,1.8],
-                    // translateX:[-50,-400]
+                    translateX:[-50,-300]
                 }}
                 transition={{
-                    delay:3,
+                    delay:1,
                     duration:1,
                     ease:'linear'
                 }}
@@ -45,18 +45,20 @@ export default function Main(){
             <motion.div
             
             initial={{
-                translateY:1,
-                scaleY:0, 
+                // translateY:1,
+                // scaleY:0, 
+                opacity:0
             }}
                 animate={{
-                    translateY:0,
-                    scaleY:1,
+                    // translateY:0,
+                    // scaleY:1,
+                    opacity:1
                    
                 }}
                 transition={{
-                   delay:1,
+                  
                     duration:1,
-                    ease:'linear'
+                    ease:'easeIn'
                     
                 }}
                
@@ -66,15 +68,15 @@ export default function Main(){
                
                 animate={
                     {
-                        scaleY:[1,1.1],
-                        scaleX:[2,1],
-                        opacity:0.5
+                        // scaleY:[1,1.1],
+                        scaleX:[1,1.2],
+                        opacity:0.5,
                     
-                        // translateX:[-50,400]
+                        translateX:[-50,400]
                     }
                 }
                 transition={{
-                    delay:3,
+                    delay:1,
                     duration:1,
                     ease:'linear',
                     
@@ -83,7 +85,7 @@ export default function Main(){
                 className='image-container-2'
                 >
                     
-                <img style={{overflow:'hidden'}}src='background.avif' className='main-image'/>
+                <motion.img whileHover={{scale:1.1}}style={{overflow:'hidden'}}src='background -2.jpg' className='main-image'/>
                 </motion.div>
             
             </motion.div>
