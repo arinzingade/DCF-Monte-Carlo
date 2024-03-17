@@ -23,11 +23,12 @@
     background-position: center; */
     display: flex;
     align-items: center;
-   justify-content: center;
+   justify-content:center;
 
 }
 .Main-heading-container{
     margin-top: 2em;
+    /* margin-left: 2em; */
     display: flex;
     z-index: 2;
 }
@@ -37,8 +38,10 @@
 }
 .image-container{
     position: absolute;
-    top: 25%;
-    left: 40%;
+    margin-top: 2em;
+   /* margin-right: 2em; */
+    /* top: 25%;
+    left: 40%; */
     width: 40%;
 }
 .image-container-2{

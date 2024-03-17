@@ -1,0 +1,39 @@
+.Cards-container{
+    display: flex;
+   
+    
+}
+.cards-Wrapper{
+    width: 100%;
+    display: flex;
+    gap:2.4em;
+    background: #141C25;
+    color: black;
+    margin: 2em 0;
+    justify-content: space-around;
+    padding: 3em;
+}
+
+.card-wrapper{
+    width: 25%;
+    background: white;
+    border-radius: 30px;
+    padding: 2em;
+    box-shadow: 10px 10px 10px 10px  red;
+}
+.card-wrapper:hover{
+    transform: scale(1.1);
+    transition: .5s;
+
+}
+.button-learnmore{
+    padding: 1em 2em;
+    font-size: .5em;
+    font-weight: 600;
+    background: white;
+}
+.button-learnmore:hover{
+    background: black;
+    color: white;
+    transition: 1s;
+}

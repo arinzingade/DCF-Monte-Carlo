@@ -1,7 +1,21 @@
+
 .Discover-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
+   padding: 2em 8em;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding-bottom: 4em;
+
+}
+.discover-heading{
+    margin: .5em;
+}
+.discover-bold-text{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1em;
 }

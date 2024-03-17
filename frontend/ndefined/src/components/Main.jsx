@@ -72,7 +72,7 @@ export default function Main(){
                         scaleX:[1,1.2],
                         opacity:0.5,
                     
-                        translateX:[-50,400]
+                        translateX:[-50,500]
                     }
                 }
                 transition={{
@@ -85,7 +85,7 @@ export default function Main(){
                 className='image-container-2'
                 >
                     
-                <motion.img whileHover={{scale:1.1}}style={{overflow:'hidden'}}src='background -2.jpg' className='main-image'/>
+                <motion.img whileHover={{scale:1.1}}style={{overflow:'hidden'}}src='pradhuman-gay.png' className='main-image'/>
                 </motion.div>
             
             </motion.div>
