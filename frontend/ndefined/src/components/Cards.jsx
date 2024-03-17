@@ -28,7 +28,7 @@ function Card({heading,description}){
                    <p> {heading}</p>
                     </div>
                 <div className="description-card">
-                    <p>{description}</p>
+                    <p className='description-p-tag'>{description}</p>
                     </div>
                     <div className='button-learnmore-container'>
                         <button className='button-learnmore'>Learn More</button>

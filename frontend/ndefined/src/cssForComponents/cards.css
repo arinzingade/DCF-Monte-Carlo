@@ -11,15 +11,15 @@
     color: black;
     margin: 2em 0;
     justify-content: space-around;
-    padding: 3em;
+    padding: 2em;
 }
 
 .card-wrapper{
     width: 25%;
     background: white;
     border-radius: 30px;
-    padding: 2em;
-    box-shadow: 10px 10px 10px 10px  red;
+    padding: 1em;
+    
 }
 .card-wrapper:hover{
     transform: scale(1.1);
@@ -36,4 +36,7 @@
     background: black;
     color: white;
     transition: 1s;
+}
+.description-p-tag{
+    font-size: 1rem;
 }
