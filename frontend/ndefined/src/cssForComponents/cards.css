@@ -7,11 +7,12 @@
     width: 100%;
     display: flex;
     gap:2.4em;
-    background: #141C25;
+    background: #222831;
     color: black;
     margin: 2em 0;
     justify-content: space-around;
     padding: 2em;
+    
 }
 
 .card-wrapper{
@@ -19,6 +20,7 @@
     background: white;
     border-radius: 30px;
     padding: 1em;
+    
     
 }
 .card-wrapper:hover{
@@ -28,9 +30,10 @@
 }
 .button-learnmore{
     padding: 1em 2em;
-    font-size: .5em;
+    font-size: 1rem;
     font-weight: 600;
     background: white;
+    
 }
 .button-learnmore:hover{
     background: black;
@@ -38,5 +41,5 @@
     transition: 1s;
 }
 .description-p-tag{
-    font-size: 1rem;
+    font-size: 2rem;
 }

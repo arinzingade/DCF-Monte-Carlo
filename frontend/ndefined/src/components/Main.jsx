@@ -25,7 +25,7 @@ export default function Main(){
             >
                 <motion.div 
                 animate={{scale:[1,1.8],
-                    translateX:[-50,-300]
+                   
                 }}
                 transition={{
                     delay:1,
@@ -39,9 +39,11 @@ export default function Main(){
                >YOUR  <span className='heading-colored'>TRUST</span> ,<br></br>
                 OUR CORNER <span className='heading-colored'>STONE</span>
                </p>
-                </motion.div>
+                 </motion.div>
               
             </motion.div>
+           
+{/* 
             <motion.div
             
             initial={{
@@ -85,10 +87,10 @@ export default function Main(){
                 className='image-container-2'
                 >
                     
-                <motion.img whileHover={{scale:1.1}}style={{overflow:'hidden'}}src='pradhuman-gay.png' className='main-image'/>
+                <motion.img whileHover={{scale:1.1}}style={{overflow:'hidden'}}src='gay.gif' className='main-image'/>
                 </motion.div>
             
-            </motion.div>
+            </motion.div>  */}
           
         </div>
             
