@@ -1,0 +1,7 @@
+.wealth-container{
+    background-image: url('WealthFile.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: black;
+}

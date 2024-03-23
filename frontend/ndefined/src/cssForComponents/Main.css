@@ -21,10 +21,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-   
+    padding-left: 4em;
     display: flex;
     align-items: center;
-   justify-content:center;
+   /* justify-content:center; */
 
 }
 /* .gif-container{

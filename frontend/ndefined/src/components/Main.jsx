@@ -24,12 +24,12 @@ export default function Main(){
            
             >
                 <motion.div 
-                animate={{scale:[1,1.8],
+                animate={{scale:[1,1.4],
                    
                 }}
                 transition={{
                     delay:1,
-                    duration:1,
+                    duration:.5,
                     ease:'linear'
                 }}
                
