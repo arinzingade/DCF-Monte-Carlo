@@ -16,11 +16,13 @@
     max-width: 100%;
 }
 .wealth-heading-container{
-   
+   margin-right: 4em;
 }
 .wealth-heading{
    
     font-size: 4rem;
     margin: 0;
 }
-
+#number{
+    color:#F96D00;
+}
