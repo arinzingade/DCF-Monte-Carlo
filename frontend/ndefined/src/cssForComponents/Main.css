@@ -17,8 +17,8 @@
     padding-top: 2em;
     padding-bottom: 10em; 
     margin: 0;
-    background-image: url('giffile.gif');
-    background-size: cover;
+    background-image: url('main3.gif');
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     padding-left: 4em;

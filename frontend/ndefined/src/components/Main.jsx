@@ -24,7 +24,7 @@ export default function Main(){
            
             >
                 <motion.div 
-                animate={{scale:[1,1.4],
+                animate={{scale:[1,1.5],
                    
                 }}
                 transition={{

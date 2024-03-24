@@ -1,5 +1,5 @@
 .Wealth-container{
-    
+   
     display: flex;
     align-items: center;
     color: black;
@@ -9,12 +9,17 @@
    
 }
 .wealth-image-container{
+   
     width: 50%;
 }
 .wealth-img{
     max-width: 100%;
 }
+.wealth-heading-container{
+   
+}
 .wealth-heading{
+   
     font-size: 4rem;
     margin: 0;
 }

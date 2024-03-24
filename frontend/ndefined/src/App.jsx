@@ -7,6 +7,7 @@ import { Cards } from './components/Cards'
 
 
 import Wealth from './components/Wealth'
+import Connecting from './components/Connecting'
 
 
 
@@ -18,7 +19,7 @@ function App() {
    <Discover/>
    <Cards/>
    <Wealth wealthNumber='$950,600,750'/>
-   
+   <Connecting/>
     </>
    
   )

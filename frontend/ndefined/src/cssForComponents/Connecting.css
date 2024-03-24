@@ -1,0 +1,17 @@
+.containing-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+.Connecting-text{
+    font-size: 5rem;
+    
+}
+
+.connecting-image-container{
+    width: 50%;
+}
+.connecting-img{
+    max-width: 100%;
+}
