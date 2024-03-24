@@ -1,5 +1,21 @@
-/* .Wealth-container{
-    background-image: url('experiment1.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+.Wealth-container{
+    
+    display: flex;
+    align-items: center;
+    color: black;
+    margin: 0;
+    justify-content: space-between;
+    
+   
+}
+.wealth-image-container{
+    width: 50%;
+}
+.wealth-img{
+    max-width: 100%;
+}
+.wealth-heading{
+    font-size: 4rem;
+    margin: 0;
+}
+

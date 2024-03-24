@@ -5,7 +5,8 @@ import Main from './components/Main'
 import Discover from './components/Discover'
 import { Cards } from './components/Cards'
 
-import Footer from './components/Footer'
+
+import Wealth from './components/Wealth'
 
 
 
@@ -16,7 +17,7 @@ function App() {
       <Main/>
    <Discover/>
    <Cards/>
-   <Footer/>
+   <Wealth wealthNumber='$950,600,750'/>
    
     </>
    

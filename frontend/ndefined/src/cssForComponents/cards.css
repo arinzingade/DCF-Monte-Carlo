@@ -1,7 +1,6 @@
 .Cards-container{
     display: flex;
-   
-    
+   margin-bottom: 1em;
 }
 .cards-Wrapper{
     width: 100%;
@@ -20,6 +19,7 @@
     background: white;
     border-radius: 30px;
     padding: 1em;
+    box-shadow: 1px 1px 5px 5px rgb(64, 64, 64);
 }
 .card-wrapper:hover{
     transform: scale(1.2)  ;
