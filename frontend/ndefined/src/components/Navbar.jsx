@@ -1,4 +1,5 @@
 import '../cssForComponents/Navbar.css'
+import { Link } from 'react-scroll'
 import {motion} from 'framer-motion'
 export default function Navbar(){
     return(
@@ -18,9 +19,24 @@ export default function Navbar(){
                  }}
                 className="list-container">
                     <ul className="navbar-list">
-                       <li><a  href="#">Contact</a></li> 
-                       <li><a href="#">Career</a></li> 
-                       <li><a href="#">About Us</a></li> 
+                       <li><Link  to="CONTACT"
+      spy={true}
+      smooth={true}
+      hashSpy={true}
+      offset={-50}
+      duration={1000}>Contact</Link></li> 
+                       <li><Link  to="LOGIN"
+      spy={true}
+      smooth={true}
+      hashSpy={true}
+      offset={50}
+      duration={500}>Login</Link></li> 
+                       <li><Link  to="ABOUT US"
+      spy={true}
+      smooth={true}
+      hashSpy={true}
+      offset={-50}
+      duration={1000}>About Us</Link></li> 
                     </ul>
                 </motion.div>
                 

@@ -5,30 +5,26 @@
 }
 .cards-Wrapper{
     width: 100%;
-    display: flex;
-    gap:2.4em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 2em;
     /* background: #f2f2f2; */
     color: black;
     margin: 2em 0;
-    justify-content: space-around;
-    padding: 4em;
+    /* justify-content: space-around; */
+    /* padding: 4em; */
     
 }
 
 .card-wrapper{
-    width: 25%;
-    /* background: white; */
     background: white;
     border-radius: 30px;
     padding: 1em;
-    
-    
 }
 .card-wrapper:hover{
-    transform: scale(1.1);
+    transform: scale(1.2)  ;
     box-shadow: 5px 5px 20px 20px rgb(64, 64, 64);
     transition: .5s;
-
 }
 .button-learnmore{
     padding: 1em 2em;

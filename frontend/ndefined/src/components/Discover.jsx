@@ -2,7 +2,7 @@ import '../cssForComponents/Discover.css'
 export default function Discover(){
     return(
         <>
-            <div className="Discover-container">
+            <div className="Discover-container" id='CONTACT'>
                 <p className='discover-heading'>DISCOVER<br></br></p>
                     <p className='discover-bold-text'>ZINGADE HOLDING & CO</p>
                 

@@ -23,7 +23,7 @@ function Card({heading,description}){
 
     return(
         <>
-            <div className="card-wrapper">
+            <div className="card-wrapper" id='ABOUT US'>
                 <div className="heading-card">
                    <p> {heading}</p>
                     </div>

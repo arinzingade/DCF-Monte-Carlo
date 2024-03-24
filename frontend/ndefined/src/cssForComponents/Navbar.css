@@ -44,4 +44,5 @@ a{
 a:hover{
     color:#F96D00;
     transition: .3s;
+    cursor: pointer;
 }
