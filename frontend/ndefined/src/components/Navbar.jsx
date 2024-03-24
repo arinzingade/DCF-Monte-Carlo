@@ -25,7 +25,7 @@ export default function Navbar(){
       hashSpy={true}
       offset={-50}
       duration={1000}>Contact</Link></li> 
-                       <li><Link  to="LOGIN"
+                       <li><Link  to={'/login'}
       spy={true}
       smooth={true}
       hashSpy={true}

@@ -1,38 +1,32 @@
+import { Background, Parallax } from 'react-parallax'
 import '../cssForComponents/Main.css'
 import {motion} from 'framer-motion'
 export default function Main(){
     return(
         <>
+        
         <div className='container-main'>
         <motion.div className="Main-heading-container" 
         
             initial={{
-                // translateY:1,
-            //    scale:0,  
                opacity:0
             }}
-            animate={{
-                // translateY:0,
-            //    scale:1,   
+            animate={{ 
                opacity:1  
             }}
-            transition={{
-                
+            transition={{  
                 duration:1,
                 ease:'easeIn'
             }}
-           
             >
                 <motion.div 
-                animate={{scale:[1,1.5],
-                   
+                animate={{scale:[1,1.5],     
                 }}
                 transition={{
                     delay:1,
                     duration:.5,
                     ease:'linear'
-                }}
-               
+                }} 
                 >
                      <p
                 className='title-main'
@@ -93,6 +87,8 @@ export default function Main(){
             </motion.div>  */}
           
         </div>
+       
+        
             
         </>
     )
