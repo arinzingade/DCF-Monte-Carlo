@@ -5,7 +5,7 @@ export default function Navbar(){
     return(
         <>
             <div className="container">
-                <motion.div className="logo-container">SAX-SUX PROJECT</motion.div>
+                <motion.div className="logo-container">finance</motion.div>
                 <motion.div 
                  initial={{
                 opacity:0
@@ -25,12 +25,12 @@ export default function Navbar(){
       hashSpy={true}
       offset={-50}
       duration={1000}>Contact</Link></li> 
-                       <li><Link  to={'/login'}
+                       <li><Link  to={'login'}
       spy={true}
       smooth={true}
       hashSpy={true}
       offset={50}
-      duration={500}>Login</Link></li> 
+      duration={1000}>Login</Link></li> 
                        <li><Link  to="ABOUT US"
       spy={true}
       smooth={true}
