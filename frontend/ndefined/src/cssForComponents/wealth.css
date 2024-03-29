@@ -15,11 +15,14 @@
 .wealth-img{
     max-width: 100%;
 }
-.wealth-heading-container{
-   margin-right: 4em;
+/* .wealth-heading-container{
+   margin-right: 1em;
+} */
+.wealth-heading-text-container{
+    display: flex;
+    justify-content: flex-end;
 }
 .wealth-heading{
-   
     font-size: 4rem;
     margin: 0;
 }

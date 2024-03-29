@@ -19,7 +19,7 @@ function App() {
       <Main/>
    <Discover/>
    <Cards/>
-   <Wealth wealthNumber='$950,600,750'/>
+   <Wealth wealthNumber='$950,600,750.708'/>
    <Connecting/>
    <Login/>
     </>

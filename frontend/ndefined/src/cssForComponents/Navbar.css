@@ -1,11 +1,13 @@
+
 body{
     font-size: 2em;
-    font-family: "RT Rondelle", sans-serif;
+    
     margin: 0;
 }
 .container{
     display: flex;
     justify-content: space-between;
+    font-family: "Dosis", sans-serif;
     position: sticky;
     top: 0;
     

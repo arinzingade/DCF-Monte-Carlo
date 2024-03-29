@@ -4,10 +4,13 @@ export default function Wealth({wealthNumber}){
         <>
             <div className="Wealth-container">
                 <div className='wealth-image-container'>
-                    <img src='finance-planner.gif' className='wealth-img'/>
+                    <img src='finance-planner2.gif' className='wealth-img'/>
                 </div>
                 <div className='wealth-heading-container'>
-                <p className='wealth-heading'>Total Wealth<br></br> Generated</p>
+                    <div className='wealth-heading-text-container'>
+                    <p className='wealth-heading'>Total Wealth<br></br>Generated</p>
+                    </div>
+                
                 <br></br>
                 <p className='wealth-heading' id='number'>{wealthNumber}</p>
                 </div>
