@@ -20,3 +20,8 @@
 .connecting-img{
     max-width: 100%;
 }
+.connecting-text-p{
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+}

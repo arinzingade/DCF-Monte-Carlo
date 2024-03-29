@@ -10,6 +10,7 @@
     /* background: #f2f2f2; */
     color: black;
     margin: 2em 0;
+    
     /* justify-content: space-around; */
     /* padding: 4em; */
     
@@ -27,6 +28,7 @@
     padding: 1em;
     /* box-shadow: 1px 1px 5px 5px rgb(64, 64, 64); */
     box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+    
 } 
 .card-wrapper:hover{
     transform: scale(1.1)  ;
@@ -41,17 +43,27 @@
     padding: 1em 2em;
     font-size: 1rem;
     font-weight: 600;
-    
+    font-family: "Dosis", sans-serif;
    background: white;
 }
 .button-learnmore:hover{
    cursor:pointer;
     transition: 1s;
 }
+.description-card{
+    padding: 0 1em;
+}
 .description-p-tag{
     font-size: 1.5rem;
     font-family: "Lato", sans-serif;
+    letter-spacing: 2px;
+    
 }
 .Heading-p{
     margin: 0;
+    margin-bottom: 1em;
+}
+.button-learnmore-container{
+    display: flex;
+    justify-content: center;
 }
