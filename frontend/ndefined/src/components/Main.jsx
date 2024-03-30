@@ -23,7 +23,6 @@ export default function Main(){
                 animate={{scale:[1,1.5],     
                 }}
                 transition={{
-                    delay:1,
                     duration:.5,
                     ease:'linear'
                 }} 

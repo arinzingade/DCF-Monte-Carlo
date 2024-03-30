@@ -22,11 +22,13 @@
   border-radius: 20px;
   color: black;
   /* box-shadow: 5px 5px 10px 10px black; */
-  box-shadow: 5px 5px 5px 5px rgb(94, 94, 94);
+  box-shadow:  4px 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+  transform: scale(1.1);
 }
 .form-container:hover{
     transform: scale(1.2);
     box-shadow: 5px 5px 20px 20px rgb(70, 70, 70);
+    box-shadow:  16px 16.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
     transition: .5s;
     cursor: pointer;
 }
@@ -64,10 +66,11 @@
 	padding-left: 24px;
 	font-weight: 700;
     margin-bottom: 2em;
+    outline: none;
 }
 .login-input:hover{
     border-bottom: 3px solid black;
-    outline: none;
+    
 }
 .login-heading{
     margin-bottom: 2em;

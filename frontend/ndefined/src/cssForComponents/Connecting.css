@@ -5,7 +5,8 @@
     color: black;
 }
 .connecting-text-container{
-    margin-left: 4em;
+    display: flex;
+    justify-content: flex-end;
 }
 .Connecting-text{
     font-size: 5rem;

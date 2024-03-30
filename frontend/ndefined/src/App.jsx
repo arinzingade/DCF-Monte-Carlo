@@ -20,7 +20,7 @@ function App() {
    <Discover/>
    <Cards/>
    <Wealth wealthNumber='$950,600,750.708'/>
-   <Connecting/>
+   {/* <Connecting/> */}
    <Login/>
     </>
    

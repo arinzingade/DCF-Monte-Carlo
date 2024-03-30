@@ -5,7 +5,7 @@
     color: black;
     margin: 0;
     justify-content: space-between;
-    
+    margin-bottom: 3em;
    
 }
 .wealth-image-container{
@@ -16,11 +16,11 @@
     max-width: 100%;
 }
 /* .wealth-heading-container{
-   margin-right: 1em;
+   margin-right: 4em;
 } */
 .wealth-heading-text-container{
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 .wealth-heading{
     font-size: 4rem;

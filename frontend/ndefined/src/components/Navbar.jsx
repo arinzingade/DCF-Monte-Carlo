@@ -5,7 +5,9 @@ export default function Navbar(){
     return(
         <>
             <div className="container">
-                <motion.div className="logo-container">finance</motion.div>
+                <motion.div className="logo-container">
+                  <p className='logo-container-p'>finance</p>
+                    </motion.div>
                 <motion.div 
                  initial={{
                 opacity:0

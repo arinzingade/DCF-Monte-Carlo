@@ -7,9 +7,9 @@ export function Cards(){
             <div className="cards-Wrapper">
                 <Card heading1="Rouge Capital" heading2="Management" description='loremA graphic representation of data abstracted from the banks of every computer in the tunnel’s ceiling. The alarm still oscillated,
 '/>
-                <Card heading1='Parabolica Private' heading2='Investment' description='loremThe knives seemed to have been sparsely decorated, years before, with a luminous digital display wired to a subcutaneous chip. 
+                <Card heading1='Parabolica' heading2='Investment' description='loremThe knives seemed to have been sparsely decorated, years before, with a luminous digital display wired to a subcutaneous chip. 
 '/>
-                <Card heading1='Belevdre Estates' description='He woke and found her stretched beside him in the center of his closed left eyelid. Strata of cigarette smoke rose from the tiers, 
+                <Card heading1='Belevdre ' heading2='Estates' description='He woke and found her stretched beside him in the center of his closed left eyelid. Strata of cigarette smoke rose from the tiers, 
 '/>
                 
             </div>
@@ -31,7 +31,8 @@ function Card({heading1,heading2,description}){
                     <p className='description-p-tag'>{description}</p>
                     </div>
                     <div className='button-learnmore-container'>
-                        <button className='button-learnmore'>Learn More</button>
+                        {/* <button className='button-learnmore'>Learn More</button> */}
+                        <button className='button type1'>Learn More</button>
                     </div>
             </div>
         </>
