@@ -9,6 +9,7 @@ import { Cards } from './components/Cards'
 import Wealth from './components/Wealth'
 import Connecting from './components/Connecting'
 import Login from './components/Login'
+import Footer from './components/Footer'
 
 
 
@@ -22,6 +23,7 @@ function App() {
    <Wealth wealthNumber='$950,600,750.708'/>
    {/* <Connecting/> */}
    <Login/>
+   <Footer/>
     </>
    
   )

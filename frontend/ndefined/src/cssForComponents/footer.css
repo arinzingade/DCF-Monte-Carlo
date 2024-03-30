@@ -1,0 +1,24 @@
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 2em;
+    font-size: 1.5rem;
+}
+ .contact{
+    font-weight: 600;
+ }
+.Arms{
+    font-weight: 600;
+}
+.footer-title-p{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.footer-title-p:hover{
+
+}
+.footer-p:hover{
+    border-bottom: 1px solid black;
+    transition: 1s ease-in;
+}

@@ -24,6 +24,8 @@
 }
 .wealth-heading{
     font-size: 4rem;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 3px;
     margin: 0;
 }
 #number{

@@ -17,19 +17,22 @@
     align-items: center;
     justify-content: space-around;
     padding: 2em;
-    border-radius: 20px;
+    
     /* background: linear-gradient(90deg, #C7C5F4, #776BCC);	 */
-  border-radius: 20px;
+  
   color: black;
   /* box-shadow: 5px 5px 10px 10px black; */
   box-shadow:  4px 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+  
   transform: scale(1.1);
 }
 .form-container:hover{
     transform: scale(1.2);
-    box-shadow: 5px 5px 20px 20px rgb(70, 70, 70);
-    box-shadow:  16px 16.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
-    transition: .5s;
+    /* box-shadow: 5px 5px 20px 20px rgb(70, 70, 70); */
+    box-shadow:  10px 10.0px 10.0px 10.0px hsl(0deg 0% 0% / 0.25);
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: .5s ease-out;
     cursor: pointer;
 }
 .form-container-form{
@@ -39,31 +42,17 @@
 }
 .login-text-p{
     margin: 0;  
+    letter-spacing: 3px;
 }
-.submit-btn{
-    background: #fff;
-	font-size: 14px;
-	margin-top: 3em;
-	padding: 16px 20px;
-	border-radius: 26px;
-	border: 1px solid #D4D3E8;
-	text-transform: uppercase;
-	font-weight: 700;
-	display: flex;
-	align-items: center;
-	width: 100%;
-	color: #4C489D;
-	box-shadow: 0px 2px 2px #5C5696;
-	cursor: pointer;
-	transition: .2s;
-    
-}
+
 .login-input{
     border: none;
     background: none;
     border-bottom: 2px solid #D1D1D4;
-    padding: 10px;
-	padding-left: 24px;
+    /* border-bottom: 2px solid #F96D00;; */
+    /* padding: 10px; */
+	/* padding-left: 24px; */
+    padding: 10px 0;
 	font-weight: 700;
     margin-bottom: 2em;
     outline: none;
@@ -75,3 +64,55 @@
 .login-heading{
     margin-bottom: 2em;
 }
+.button{
+    position: relative;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    margin: 1em 0.8em;
+   
+  }
+  .button:hover{
+      transform: scale(.9);
+      transition: .5s;
+  }
+    
+    .type1{
+      color:#F96D00;
+    }
+      .type1::after,
+      .type1::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 20%;
+        height: 20%;
+        border: 2px solid;
+        transition: all 0.6s ease;
+        border-radius: 2px;
+      }
+    
+      .type1::after{
+        bottom: 0;
+        right: 0;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: black;
+        border-right-color: black;
+      }
+      .type1::before{
+        top: 0;
+        left: 0;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-top-color: black;
+        border-left-color: black;
+      }
+      .type1:hover:after,
+      .type1:hover:before{
+        width: 100%;
+        height: 100%;
+      }

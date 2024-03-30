@@ -20,10 +20,11 @@
 .discover-bold-text{
     margin: 0;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 1em;
-    
-    font-family: "Playfair Display", serif;
+   
+    /* font-family: "Playfair Display", serif; */
+    font-family: "Libre Caslon Text", serif;
 }
 .discover-p{
     font-family: "Lato", sans-serif;
@@ -34,7 +35,8 @@
 }
 /* .discover-p:hover{
     letter-spacing: 3px;
-    transition: 1s;
+    transition: 1s ease-in;
+    
 } */
 .orange-text{
     color:#F96D00;
