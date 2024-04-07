@@ -19,7 +19,7 @@ export default function Footer(){
       spy={true}
       smooth={true}
       hashSpy={true}
-      offset={-50}
+      offset={-200}
       duration={1000}
                     >
                     Rouge Capital Management
@@ -31,7 +31,7 @@ export default function Footer(){
                     spy={true}
                     smooth={true}
                     hashSpy={true}
-                    offset={-50}
+                    offset={-200}
                     duration={1000}
                                   >
                                  Parabolica Private Investments
@@ -43,7 +43,7 @@ export default function Footer(){
                     spy={true}
                     smooth={true}
                     hashSpy={true}
-                    offset={-50}
+                    offset={-200}
                     duration={1000}
                                   >
                                Belvedere Estates

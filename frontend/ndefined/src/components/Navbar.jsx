@@ -37,7 +37,7 @@ export default function Navbar(){
       spy={true}
       smooth={true}
       hashSpy={true}
-      offset={-50}
+      offset={-200}
       duration={1000}>About Us</Link></li> 
                     </ul>
                 </motion.div>
