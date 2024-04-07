@@ -1,4 +1,5 @@
 import '../cssForComponents/footer.css'
+import { Link } from 'react-scroll'
 export default function Footer(){
     return(
         <>
@@ -12,9 +13,42 @@ export default function Footer(){
                 </div>
                 <div className="our-three-arms-container">
                 <p className="footer-p Arms">Our Three Arms:</p>
-                <p className="footer-p">Rouge Capital Management</p>
-                <p className="footer-p">Parabolica Private Investments</p>
-                <p  className="footer-p">Belvedere Estates</p>
+                <p className="footer-p" >
+                    <Link to='ABOUT US'
+                    
+      spy={true}
+      smooth={true}
+      hashSpy={true}
+      offset={-50}
+      duration={1000}
+                    >
+                    Rouge Capital Management
+                    </Link>
+                   </p>
+                <p className="footer-p" >
+                <Link to='ABOUT US'
+                    
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={-50}
+                    duration={1000}
+                                  >
+                                 Parabolica Private Investments
+                                  </Link>
+                    </p>
+                <p  className="footer-p" >
+                <Link to='ABOUT US'
+                    
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={-50}
+                    duration={1000}
+                                  >
+                               Belvedere Estates
+                                  </Link>
+                    </p>
                 </div>  
                <div className="footer-logo-container">
                 <p className='footer-title-p'>Zingade Holdings & Co</p>
