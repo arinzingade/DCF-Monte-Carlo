@@ -11,8 +11,9 @@ export default function Main(){
             initial={{
                opacity:0
             }}
-            animate={{ 
-               opacity:1  
+            whileInView={{
+                opacity:1,
+                translateY:[50,0]
             }}
             transition={{  
                 duration:1,

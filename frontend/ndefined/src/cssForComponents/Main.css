@@ -1,8 +1,8 @@
 
 .container-main{
-    
+    font-size: 1.3em;
     padding-top: 2em;
-    padding-bottom: 10em; 
+    padding-bottom: 12em; 
     margin: 0;
     background-image: url('main3.gif');
     background-size: contain;

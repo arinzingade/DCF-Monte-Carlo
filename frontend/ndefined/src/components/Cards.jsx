@@ -1,4 +1,5 @@
 import '../cssForComponents/cards.css'
+import {motion} from 'framer-motion'
 export function Cards(){
     return(
     <>
@@ -23,7 +24,26 @@ function Card({heading1,heading2,description}){
 
     return(
         <>
-            <div className="card-wrapper" id='ABOUT US'>
+            <motion.div
+            initial={
+                {
+                    opacity:0,
+                    
+                }
+            }
+            
+            whileInView={{
+                opacity:1,
+               translateX:[-50,0] 
+            }}
+            viewport={{
+              amount:'some'  
+            }}
+             transition={{
+                duration:1
+            }}
+            
+            className="card-wrapper" id='ABOUT US'>
                 <div className="heading-card">
                    <p className='Heading-p'> {heading1}<br></br>{heading2}</p>
                     </div>
@@ -34,7 +54,7 @@ function Card({heading1,heading2,description}){
                         {/* <button className='button-learnmore'>Learn More</button> */}
                         <button className='button type1'>Learn More</button>
                     </div>
-            </div>
+            </motion.div>
         </>
     )
 }

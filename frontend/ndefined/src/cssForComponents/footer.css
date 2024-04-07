@@ -1,7 +1,9 @@
 .footer-container{
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
+    color: rgb(92, 92, 92);
+    
     padding: 2em;
     font-size: 1.5rem;
 }
@@ -16,9 +18,11 @@
     font-weight: 600;
 }
 .footer-title-p:hover{
-
+color: black;
+transition: .5s;
 }
 .footer-p:hover{
-    border-bottom: 1px solid black;
-    transition: 1s ease-in;
+   color: black;
+   cursor: pointer;
+    transition: .2s ease-in;
 }

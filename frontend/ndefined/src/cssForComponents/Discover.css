@@ -41,3 +41,8 @@
 .orange-text{
     color:#F96D00;
 }
+.discover-motion-heading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,8 +1,23 @@
 import '../cssForComponents/login.css'
+import {motion} from 'framer-motion'
 export default function Login(){
     return(
         <>
-            <div className="Login-container" id='login'>         
+            <motion.div 
+            initial={{
+                opacity:0,
+                
+            }}
+            whileInView={{
+                opacity:1,
+                translateX:[-50,0],
+                
+            }}
+            viewport={{
+                amount:'some'
+            }}
+            transition={{duration:1}}
+            className="Login-container" id='login'>         
                 <div className='form-container'>
                 <div className='gif-container'>
                     <img className='login-gif' src='login.gif'></img>
@@ -22,7 +37,7 @@ export default function Login(){
                 </div>
                
                
-            </div>
+            </motion.div>
         </>
     )
 
