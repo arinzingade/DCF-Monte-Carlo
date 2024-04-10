@@ -1,6 +1,5 @@
 .main-container{
-    padding: 2em;
-   font-size: 4em;
+ padding:  7em ;
   background-image: url('image 4.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,7 +9,7 @@
 .main-title{
     display: flex;
     flex-direction: column;
-    
+    font-size: 3rem;
 }
 .image-container{
     
