@@ -1,0 +1,16 @@
+
+.nav-container{
+    
+    background: #D9D9D9;
+    display: flex;
+    font-size: 1.5rem;
+    padding: .8em;
+    justify-content: space-between;
+    
+
+}
+.nav-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

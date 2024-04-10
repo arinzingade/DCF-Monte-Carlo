@@ -1,0 +1,18 @@
+.main-container{
+    
+  display: flex;
+  
+    
+    
+}
+.main-title{
+    display: flex;
+    flex-direction: column;
+    
+}
+.image-container{
+    
+}
+.image-main{
+    max-width: 100%;
+}
