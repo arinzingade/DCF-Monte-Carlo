@@ -11,9 +11,9 @@ export const Main = () => {
             </span>
         </p>
     </div>
-    <div className='image-container'>
+    {/* <div className='image-container'>
         <img src='image 4.png' className='image-main'></img>
-    </div>
+    </div> */}
     
    </div>
    </>

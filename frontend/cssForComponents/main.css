@@ -1,7 +1,9 @@
 .main-container{
-    
-  display: flex;
-  
+    padding: 2em;
+   font-size: 4em;
+  background-image: url('image 4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
     
     
 }
