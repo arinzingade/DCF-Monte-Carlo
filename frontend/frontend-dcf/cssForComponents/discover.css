@@ -1,0 +1,23 @@
+.discover-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8em 16em;
+    letter-spacing: 3px;
+    
+}
+.discover-heading{
+    font-size: 2rem;
+   
+}
+.discover-title{
+    font-size: 3rem;
+    margin-bottom: .8em;
+    font-weight: 800;
+}
+.discover-paragraph-p{
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 1.8rem;
+}

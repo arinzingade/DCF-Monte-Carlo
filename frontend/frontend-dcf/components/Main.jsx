@@ -6,9 +6,8 @@ export const Main = () => {
    <div className='main-container'>
     <div className=''>
         <p className='main-title'>
-            YOUR TRUST,<span>
-            OUR CORNERSTONE
-            </span>
+            YOUR <span className='color-blue'>TRUST</span>,<br></br>
+            OUR<span className='color-blue'>CORNERSTONE</span> 
         </p>
     </div>
     {/* <div className='image-container'>

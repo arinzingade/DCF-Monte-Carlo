@@ -1,0 +1,19 @@
+.main-container{
+ padding:  10em 5em ;
+ background-color:#161628;
+    color: white;
+    
+}
+.main-title{
+    
+    font-size: 3rem;
+}
+.image-container{
+    
+}
+.image-main{
+    max-width: 100%;
+}
+.color-blue{
+    color: #80AAD6;
+}
